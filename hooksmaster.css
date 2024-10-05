@@ -27,6 +27,8 @@ body {
   background: #191919;
   padding: 12px 0;
   border-bottom: 1px solid #000;
+  text-align: center;
+
 }
 
 /* Header Container: Limits the maximum width of the header content */
@@ -240,7 +242,7 @@ body {
 
 /* Text inside Second Main Section: Sets width and margin for paragraphs */
 .second-main p {
-  width: 830px;
+  max-width: 830px;
   margin: 0 auto;
   text-align: center;
   font-family: 'Montserrat';
