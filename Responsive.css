@@ -13,7 +13,7 @@
 
   .content {
     width: 1296px;
-    height: 454px;
+    /* height: 454px; */
   }
 }
 
@@ -29,7 +29,7 @@
 
   .content {
     width: 1296px;
-    height: 454px;
+    /* height: 454px; */
   }
 }
 
@@ -45,7 +45,7 @@
 
   .content {
     width: 1296px;
-    height: 454px;
+    /* height: 454px; */
   }
 }
 
@@ -203,7 +203,7 @@
 
   .content {
     padding: 8px;
-    height: auto;
+    /* height: auto; */
   }
 
   .plans {
