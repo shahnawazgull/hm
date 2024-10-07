@@ -137,45 +137,6 @@
     font-weight: 500;
   }
 
-  .box-cont input {
-    padding: 10px 22px;
-  }
-
-  .credit-box button {
-    font-size: 1rem;
-  }
-
-  .main-head h1 {
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
-
-  .box {
-    padding: 15px 17px;
-    line-height: 2.0;
-    height: auto;
-  }
-
-  .box-head {
-    font-size: 20px;
-    font-weight: 500;
-  }
-
-  .box-head p,
-  #p {
-    font-size: 14px;
-    font-weight: 400;
-  }
-
-  .price h1 {
-    font-size: 30px;
-    font-weight: 600;
-  }
-
-  .box button {
-    padding: 6px;
-    font-size: 14px;
-  }
 }
 
 @media (max-width:880px) {
@@ -225,12 +186,24 @@
 
   }
 
+  .plans {
+    margin: 0 auto;
+  }
+
+  .box {
+    width: 100%;
+    margin-bottom: 1rem;
+    height: auto;
+    padding: 14px 20px;
+  }
+
   .credit {
     height: auto;
   }
 
   .content {
     padding: 8px;
+    height: auto;
   }
 
   .plans {
