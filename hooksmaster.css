@@ -7,7 +7,8 @@
 /* Body Styling: Sets a default background and font */
 body {
   font-family: 'Montserrat';
-  background: #f8f9fa4f;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(122, 135, 255, 0.06) 88%, rgba(72, 90, 255, 0) 100%);
+  ;
 }
 
 /* Header Section: Credit score styling */
@@ -32,16 +33,24 @@ body {
 }
 
 /* Header Container: Limits the maximum width of the header content */
-.admin-header .container {
-  max-width: 1239px;
+.admin-header {
+  max-width: 1920px;
+  padding: 14px 44px;
+  height: 80px;
+}
+
+.header-two {
+  max-width: 1704px;
+  height: 50px;
+  gap: 10px;
 }
 
 /* Profile Icon: Sets size, shape, alignment, and relative positioning for the profile icon */
 .admin-header .profile-icn {
   background: #c4c4c4;
   border-radius: 50%;
-  height: 56px;
-  width: 56px;
+  height: 50px;
+  width: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +69,12 @@ body {
 .hm-logo {
   color: white;
   display: flex;
+  margin-left: -6rem;
   /* align-content: center; */
+}
+
+.header-profile {
+  margin-right: -6rem;
 }
 
 .logo-text p {
@@ -78,7 +92,7 @@ body {
   content: "";
   width: 1px;
   height: 30px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.7);
   top: 50%;
   transform: translateY(-50%);
   left: -16px;
@@ -91,8 +105,9 @@ body {
   margin: auto;
   margin-top: 2rem;
   padding: 24px 0px 40px 0px;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: #fff;
+  gap: 16px;
 }
 
 .for-border {
@@ -150,7 +165,11 @@ body {
 
 /* Plan Text Spacing: Adds margin between text elements inside the plan section */
 .plan p {
-  margin-right: 1rem;
+  margin-right: 24px;
+
+}
+
+.current-text {
   font-size: 20px;
   font-weight: 500;
 }
@@ -163,7 +182,7 @@ body {
   text-transform: capitalize;
   border: none;
   padding: 8px 12px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   color: #000;
 }
@@ -172,6 +191,11 @@ body {
 .subs {
   border-bottom: 1px solid rgba(128, 128, 128, 0.486);
   height: 74px;
+}
+
+.sub-text {
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /* Active Subscription Styling: Adds background color, border radius, and padding to the active status */
@@ -183,6 +207,8 @@ body {
   padding: 8px 12px;
   cursor: pointer;
   color: #000000;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 /* Credit Section Text: Applies capitalization to the credit section text */
@@ -200,6 +226,7 @@ body {
   border-bottom: 1px solid rgba(128, 128, 128, 0.486);
   padding: 10px 10px 20px 10px;
   height: 130px;
+  gap: 16px;
 }
 
 .credit-text {
@@ -230,10 +257,9 @@ body {
   justify-content: center;
   font-size: 36px;
   font-weight: 700;
-  padding: 1rem;
-  font-family: 'Plus Jakarta Sans';
   line-height: 43.8px;
   color: rgba(0, 0, 0, 1);
+  margin-bottom: 24px;
 }
 
 .heading p {
@@ -257,27 +283,34 @@ body {
 .credit-box {
   display: grid;
   grid-template-columns: auto auto;
-  width: 850px;
+  max-width: 858px;
+  height: 275;
   margin: 0 auto;
-  padding: 1rem;
-  gap: 1rem;
-  margin-top: 5rem;
+  gap: 20px;
+  margin-top: 48px;
 }
 
 .box-cont {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* width: 419px; */
-  line-height: 2.2;
-  padding: 28px 32px;
+  max-width: 419px;
+  height: 275px;
+  padding: 23px 32px;
+  border-radius: 8px;
 
+}
+
+.for {
+  width: 355px;
+  height: 219px;
+  gap: 32px;
 }
 
 /* Input Field Styles: Adds padding, border color, and radius for the input fields inside credit purchase box */
 .box-cont input {
   border-radius: 4px;
   border: 1px solid #CCCCCC;
-  padding: 8px 24px;
+  padding: 12px 24px;
   width: 100%;
   margin-bottom: 2rem;
 }
@@ -300,7 +333,8 @@ body {
   background-color: rgba(72, 90, 255, 1);
   padding: 9px 24px;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 20px;
+  font-weight: 500;
   transition: all ease-in 0.2s;
 }
 
@@ -323,25 +357,28 @@ body {
 }
 
 .main-head h1 {
-  font-size: 42px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 48px;
   font-weight: 700;
+  line-height: 66px;
 }
 
 /* Plans Grid Layout: Sets up a three-column grid for the plans section */
 .plans {
   display: grid;
-  grid-template-columns: auto auto auto;
-  margin: 0 auto;
+  grid-template-columns: repeat(3, 390px);
+  justify-content: center;
   margin-bottom: 5rem;
-  gap: 1.2rem;
+  gap: 24px;
   margin-top: 3rem;
-  width: 1297px;
+  max-width: 1704px;
+  height: 342px;
 }
 
 /* Plan Box Style: Basic styles for each plan box */
 .box {
   background-color: #fff;
-  padding: 28px 32px;
+  padding: 28px 35px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
     0 6px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -349,9 +386,10 @@ body {
   border-left: 1px solid rgba(0, 0, 0, 1);
   border-right: 5px solid rgba(0, 0, 0, 1);
   border-bottom: 5px solid rgba(0, 0, 0, 1);
-  width: 399px;
-  height: 340px;
-
+  width: 390px;
+  height: 342px;
+  gap: 29px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 /* Plan Box Heading: Styles the heading inside each plan box */
@@ -360,8 +398,9 @@ body {
   text-transform: capitalize;
   font-size: 18px;
   font-weight: 600;
-  line-height: 32px;
+  line-height: 28px;
   text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .box-head2 {
@@ -382,12 +421,13 @@ body {
 
 .p-excl {
   color: rgba(255, 255, 255, 0.7);
+  text-align: center;
 }
 
 #p {
   font-size: 20px;
   font-weight: 400;
-  text-align: center;
+  line-height: 42px;
 }
 
 /* Price Display: Aligns price text and icons inside plan boxes */
@@ -408,14 +448,14 @@ body {
 }
 
 .price h1 {
-  font-size: 40px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 48px;
   font-weight: 700;
 }
 
 .p-cent {
   color: rgba(96, 101, 113, 1);
   text-align: center;
-  /* Centers the text inside the <p> element */
 }
 
 .i-blue {
@@ -433,7 +473,7 @@ i {
 .box button {
   border: 2px solid rgba(25, 25, 25, 1);
   border-bottom: 5px solid rgba(25, 25, 25, 1);
-  border-right: 4px solid rgba(25, 25, 25, 1);
+  border-right: 5px solid rgba(25, 25, 25, 1);
   border-radius: 50px;
   width: 100%;
   color: rgba(25, 25, 25, 1);
@@ -447,6 +487,11 @@ i {
   font-size: 20px;
 }
 
+.fa-check2 {
+  color: transparent;
+
+}
+
 .excl {
   background-color: rgba(72, 90, 255, 1);
   color: white;
@@ -456,7 +501,7 @@ i {
 #up {
   border: 2px solid rgba(25, 25, 25, 1);
   border-bottom: 5px solid rgba(25, 25, 25, 1);
-  border-right: 4px solid rgba(25, 25, 25, 1);
+  border-right: 5px solid rgba(25, 25, 25, 1);
   border-radius: 50px;
   background-color: white;
   color: rgba(25, 25, 25, 1);
@@ -474,3 +519,4 @@ i {
   background-color: rgba(72, 90, 255, 1);
   color: white;
 }
+
