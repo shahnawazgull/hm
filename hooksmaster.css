@@ -148,7 +148,7 @@ body {
 
 /* Hover Effect for Bill Button: Changes background and text color on hover */
 .bill:hover {
-  background-color: #893BFF;
+  background-color:rgba(72, 90, 255, 1);
   color: #fff;
 }
 
