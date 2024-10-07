@@ -138,7 +138,7 @@ body {
 .bill {
   text-transform: capitalize;
   border: 1px solid rgba(128, 128, 128, 0.39);
-  padding: 10px;
+  padding: 12px 20px;
   border-radius: 66px;
   cursor: pointer;
   transition: all ease-in 0.2s;
@@ -148,7 +148,7 @@ body {
 
 /* Hover Effect for Bill Button: Changes background and text color on hover */
 .bill:hover {
-  background-color:rgba(72, 90, 255, 1);
+  background-color: rgba(72, 90, 255, 1);
   color: #fff;
 }
 
@@ -458,13 +458,9 @@ body {
   text-align: center;
 }
 
-.i-blue {
-  color: rgba(72, 90, 255, 1);
-}
-
 /* Plan Icon Styling: Colors and spaces icons in plan descriptions */
 i {
-  color: rgba(0, 0, 0, 1);
+  color: rgba(72, 90, 255, 1);
   margin-right: 10px;
   font-size: 1.2rem;
 }
@@ -488,8 +484,7 @@ i {
 }
 
 .fa-check2 {
-  color: transparent;
-
+  color: white;
 }
 
 .excl {
@@ -519,4 +514,3 @@ i {
   background-color: rgba(72, 90, 255, 1);
   color: white;
 }
-
