@@ -7,7 +7,14 @@
 /* Body Styling: Sets a default background and font */
 body {
   font-family: 'Montserrat';
-  background-color: rgba(238, 240, 255)
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      /* White with 20% opacity */
+      rgba(122, 135, 255, 0.06) 88%,
+      /* Light Blue with 6% opacity */
+      rgba(72, 90, 255, 0) 100%
+      /* Dark Blue with 0% opacity */
+    );
 }
 
 /* Header Section: Credit score styling */
