@@ -245,13 +245,22 @@ body {
   font-size: 13px;
 }
 
-/* Credit Bar: Creates a progress bar with a gradient fill */
 .bar {
   width: 100%;
   height: 18px;
-  background: linear-gradient(to right, rgba(72, 90, 255, 1) 40%, rgba(217, 217, 217, 1) 40%);
+  background-color: rgba(217, 217, 217, 1);
   border-radius: 40px;
+  position: relative;
+  overflow: hidden;
 }
+
+.bar-fill {
+  height: 100%;
+  width: 44%;
+  background-color: rgba(72, 90, 255, 1);
+  border-radius: 60px
+}
+
 
 /* Secondary Main Section: Adjusts margins and width for the section containing additional content */
 .second-main {
@@ -339,7 +348,7 @@ body {
   font-size: 17px;
   font-weight: 500;
   transition: all ease-in 0.2s;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  /* border: 1px solid rgba(0, 0, 0, 0.5); */
 }
 
 .dollar {
