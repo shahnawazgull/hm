@@ -1,4 +1,4 @@
-@media (min-width:1900px) {
+/* @media (min-width:1900px) {
   .admin-header {
     padding: 0px -6px;
   }
@@ -14,7 +14,7 @@
   .content {
     width: 1296px;
     /* height: 454px; */
-  }
+}
 }
 
 @media (max-width:1600px) {
@@ -29,11 +29,10 @@
 
   .content {
     width: 1296px;
-    /* height: 454px; */
   }
 }
 
-@media (max-width:1555px) {
+/* @media (max-width:1555px) {
 
   .hm-logo {
     margin-left: -2rem;
@@ -45,10 +44,10 @@
 
   .content {
     width: 1296px;
-    /* height: 454px; */
   }
-}
-
+} */
+*/
+/* 
 @media (max-width:1415px) {
 
   .hm-logo {
@@ -62,7 +61,7 @@
   .content {
     width: 1150px;
   }
-}
+} */
 
 
 @media (max-width:1180px) {
